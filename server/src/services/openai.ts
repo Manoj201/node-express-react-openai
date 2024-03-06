@@ -58,7 +58,7 @@ class OpenAiService {
 
         const fileExtension = path.extname(originalname)
 
-        const loader = getFileLoader('.pdf', pathName)
+        const loader = getFileLoader(fileExtension, pathName)
         if (!loader) {
             throw Error('bad')
         }
